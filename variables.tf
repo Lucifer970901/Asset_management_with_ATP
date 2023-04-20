@@ -55,7 +55,7 @@ default     = "10.0.1.0/24"
 
 #variables to create linux instance
 variable instance_image_ocid {
-  type = "map(string)"
+  type = map(string)
 
   default = {
     # Updated to Oracle Linux 7.8 with all patches as of April 2020.
