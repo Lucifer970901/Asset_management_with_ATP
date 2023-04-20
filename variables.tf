@@ -69,6 +69,7 @@ variable instance_image_ocid {
 
 variable "instance_name"{
 description  = "provide the display name for thelinux instance to be deployed"
+default = "Asset_management_instance"
 }
 
 variable "ssh_authorized_keys" {
