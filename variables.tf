@@ -82,7 +82,7 @@ variable "boot_volume_size_in_gbs" {
   default = "50"
 }
 variable "shape" {
-  default = "VM.Standard2.1"
+  default = "VM.Standard.E4.Flex"
 }
 variable "assign_public_ip" {
   default = true
