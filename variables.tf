@@ -72,9 +72,7 @@ description  = "provide the display name for thelinux instance to be deployed"
 default = "Asset_management_instance"
 }
 
-variable "ssh_authorized_keys" {
-  default = "C:/Users/megn/new.pub"
-}
+variable "ssh_authorized_keys" {}
 
 variable "preserve_boot_volume" {
   default = false
