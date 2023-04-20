@@ -6,3 +6,13 @@ output "asset_compartment" {
 output "vcn_id" {
 value = oci_core_vcn.test_vcn.id
 }
+
+output "instance_id"{
+value = "${oci_core_instance.linux.*.id}"
+}
+
+output "assigned_public_ip" {
+ description = "Public IPs of created instances. "
+ value       = "${oci_core_instance.linux.*.public_ip}"
+
+}
