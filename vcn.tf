@@ -9,7 +9,7 @@ resource "oci_core_vcn" "test_vcn" {
 
 #resource block for defining public subnet
 resource "oci_core_subnet" "publicsubnet"{
-dns_label = var.publicSubnet_dns_label
+dns_label = "PublicSubnet"
 compartment_id = oci_identity_compartment.asset_compartment.id
 vcn_id = oci_core_vcn.test_vcn.id
 display_name = var.display_name_publicsubnet
