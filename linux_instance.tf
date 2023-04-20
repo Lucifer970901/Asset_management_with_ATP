@@ -15,7 +15,6 @@ shape_config {
 
         #Optional
         memory_in_gbs = var.instance_shape_config_memory_in_gbs
-        nvmes = var.instance_shape_config_nvmes
         ocpus = var.instance_shape_config_ocpus
     }
   
