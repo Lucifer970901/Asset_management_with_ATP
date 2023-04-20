@@ -14,7 +14,7 @@ data "oci_identity_availability_domains" "ads" {
   compartment_id = "${var.compartment_ocid}"
   ad_number = "${var.availability_domain}"
 }
-variable "availability_domain"{
+variable "availability_domains"{
 default = "1"
 }
 
