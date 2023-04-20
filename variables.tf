@@ -10,7 +10,7 @@ variable "parent_compartment" {
   type        = string
 
 }
-data "oci_identity_availability_domain" "ad" {
+data "oci_identity_availability_domains" "ads" {
   compartment_id = "${var.compartment_ocid}"
   ad_number = "${var.availability_domain}"
 }
