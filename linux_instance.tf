@@ -11,7 +11,14 @@ resource "oci_core_instance" "linux" {
     hostname_label = "linuxInstance"
     subnet_id      = oci_core_subnet.publicsubnet.id
   }
+shape_config {
 
+        #Optional
+        memory_in_gbs = var.instance_shape_config_memory_in_gbs
+        nvmes = var.instance_shape_config_nvmes
+        ocpus = var.instance_shape_config_ocpus
+    }
+  
   metadata = {
     ssh_authorized_keys = var.ssh_authorized_keys
   }
