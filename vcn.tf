@@ -14,7 +14,7 @@ compartment_id = oci_identity_compartment.asset_compartment.id
 vcn_id = oci_core_vcn.test_vcn.id
 display_name = var.display_name_publicsubnet
 cidr_block = var.cidr_block_publicsubnet
-route_table_id = oci_core_route_table.publicRT.id}
+route_table_id = oci_core_route_table.publicRT.id
 security_list_ids = [oci_core_security_list.publicSL.id]
 }
 
