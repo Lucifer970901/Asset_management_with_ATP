@@ -86,3 +86,9 @@ variable "shape" {
 variable "assign_public_ip" {
   default = true
 }
+variable "instance_shape_config_memory_in_gbs"{
+ default = "16"
+}
+variable "instance_shape_config_ocpus"{
+  default ="1"
+}
