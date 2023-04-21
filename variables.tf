@@ -8,8 +8,12 @@ variable "region" {}
 variable "parent_compartment" {
   description = "parent compartment id under which this compartment is created"
   type        = string
-
 }
+
+variable"compartment_name"{
+  #default = "asset_mgmt_solutions"
+}
+
 data "oci_identity_availability_domains" "ads" {
   compartment_id = "${var.compartment_ocid}"
  # ad_number = "${var.availability_domain}"
