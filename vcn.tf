@@ -124,6 +124,15 @@ resource "oci_core_security_list" "privateSL" {
     source   = "10.0.0.0/16"
   }
   
+    ingress_security_rules {
+    tcp_options {
+      max = "1521"
+      min = "1521"
+    }
+
+    protocol = "6"
+    source   = "10.0.0.0/16"
+  }
   ingress_security_rules {
     icmp_options {
       type = "3"
