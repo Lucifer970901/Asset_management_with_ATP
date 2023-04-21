@@ -105,11 +105,11 @@ variable "database_data_storage_size_in_tbs"{
 }
 
 variable "database_db_name"{
-  default = "asset_mgmt_ATP"
+  default = "AssetMgmtATP"
 }
 
 variable "database_display_name"{
-  default = "asset_mgmt_ATP"
+  default = "AssetMgmtATP"
 }
 
 variable "database_license_model"{
