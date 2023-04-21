@@ -133,7 +133,7 @@ default = "asset_mgmt_OIC"
 }
 
 variable "integration_instance_integration_instance_type"{
-  default = "ENTERPRISE"
+  #default = "ENTERPRISE"
 }
 
 variable "integration_instance_is_byol"{
