@@ -67,7 +67,7 @@ variable instance_image_ocid {
     ap-sydney-1 = "ocid1.image.oc1.ap-sydney-1.aaaaaaaagjxhv6npulrdex7l2enor4p4fxfztmefrnu7327p7coqw6bckixa"
     us-ashburn-1 = "ocid1.image.oc1.iad.aaaaaaaa7czp5peti75uc4cazdfxnk5t7fujnsmmdnflydl7vakfahtxw5sq"
     ap-melbourne-1 = "ocid1.image.oc1.ap-melbourne-1.aaaaaaaaoygpvnphpf3q4m3zgj2wvlvag5gjksc63zmmaelbdlnio3gt5mqa"
-    ap-mumbai-1  = "oocid1.image.oc1.ap-mumbai-1.aaaaaaaax7qbgn42wwwv6dfkqyt5reesddvlkkqcgl7smmq5m7qrbpr6nr5a"
+    ap-mumbai-1  = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaax7qbgn42wwwv6dfkqyt5reesddvlkkqcgl7smmq5m7qrbpr6nr5a"
   }
 }
 
