@@ -128,7 +128,7 @@ variable "database_db_workload"{
 }
 
 #variables OIC instance.
-variable "integration_instance_display_name"
+variable "integration_instance_display_name"{
 default = "asset_mgmt_OIC"
 }
 
