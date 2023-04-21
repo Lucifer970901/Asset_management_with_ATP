@@ -14,5 +14,8 @@ value = "${oci_core_instance.linux.*.id}"
 output "assigned_public_ip" {
  description = "Public IPs of created instances. "
  value       = "${oci_core_instance.linux.*.public_ip}"
+}
 
+output "ATP_database_id" {
+  value = oci_database_autonomous_database.test_ATP_database.id
 }
