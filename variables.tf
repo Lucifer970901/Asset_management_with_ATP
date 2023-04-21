@@ -126,3 +126,16 @@ variable "database_db_version"{
 variable "database_db_workload"{
   default = "OLTP"
 }
+
+#variables OIC instance.
+variable "integration_instance_display_name"
+default = "asset_mgmt_OIC"
+}
+
+variable "integration_instance_integration_instance_type"{
+  default = "Enterprise"
+}
+
+variable "integration_instance_message_packs"{
+  default = "1"
+}
