@@ -3,7 +3,7 @@ output "asset_compartment" {
   value       = oci_identity_compartment.asset_compartment.name
 }
 
-output "compartment id" {
+output "compartment_id" {
   value = oci_identity_compartment.asset_compartment.id
 }
 
@@ -24,6 +24,6 @@ output "ATP_database_id" {
   value = oci_database_autonomous_database.test_ATP_database.id
 }
 
-output "OIC id" {
+output "OIC_id" {
   value = oci_integration_integration_instance.test_integration_instance.id
 }
