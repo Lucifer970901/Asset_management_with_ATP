@@ -136,6 +136,10 @@ variable "integration_instance_integration_instance_type"{
   default = "Enterprise"
 }
 
+variable "integration_instance_is_byol"{
+  default = "False"
+}
+
 variable "integration_instance_message_packs"{
   default = "1"
 }
