@@ -108,7 +108,7 @@ variable "database_db_name"{
   default = "asset_mgmt_ATP"
 }
 
-variable "database_display_name"
+variable "database_display_name"{
   default = "asset_mgmt_ATP"
 }
 
