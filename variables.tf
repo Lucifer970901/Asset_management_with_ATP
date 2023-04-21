@@ -25,7 +25,7 @@ default = "10.0.0.0/16"
 }
 variable "vcn_dns_label" {
   description = "A DNS label for the VCN, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet. "
-  default     = "asset_management_vcn"
+  default     = "AssetManagementVcn"
 }
 variable "display_name_vcn"{
 description = "privide a displayname for vcn"
