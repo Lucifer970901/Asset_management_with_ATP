@@ -86,14 +86,7 @@ resource "oci_core_security_list" "publicSL" {
     protocol = "6"
     source   = "0.0.0.0/0"
   }
-  ingress_security_rules {
-    icmp_options {
-      type = "0"
-    }
-
-    protocol = "1"
-    source   = "0.0.0.0/0"
-  }
+ 
   ingress_security_rules {
     icmp_options {
       type = "3"
@@ -105,7 +98,7 @@ resource "oci_core_security_list" "publicSL" {
   }
   ingress_security_rules {
     icmp_options {
-      type = "8"
+      type = "3"
     }
 
     protocol = "1"
@@ -130,14 +123,7 @@ resource "oci_core_security_list" "privateSL" {
     protocol = "6"
     source   = "10.0.0.0/16"
   }
-  ingress_security_rules {
-    icmp_options {
-      type = "0"
-    }
-
-    protocol = "1"
-    source   = "10.0.0.0/16"
-  }
+  
   ingress_security_rules {
     icmp_options {
       type = "3"
@@ -145,11 +131,11 @@ resource "oci_core_security_list" "privateSL" {
     }
 
     protocol = "1"
-    source   = "10.0.0.0/16"
+    source   = "0.0.0.0/0"
   }
   ingress_security_rules {
  icmp_options {
-      type = "8"
+      type = "3"
     }
 
     protocol = "1"
