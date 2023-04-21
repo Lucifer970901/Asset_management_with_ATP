@@ -92,3 +92,33 @@ variable "instance_shape_config_memory_in_gbs"{
 variable "instance_shape_config_ocpus"{
   default ="1"
 }
+
+# ATP database variables
+variable "atp_password"{}
+
+variable "database_cpu_core_count"{
+  default = "1"
+}
+
+variable "database_data_storage_size_in_tbs"{
+  default = "1"
+}
+
+variable "database_db_name"{
+  default = "asset_mgmt_ATP"
+}
+
+variable "database_display_name"
+  default = "asset_mgmt_ATP"
+}
+
+variable "database_license_model"{
+  default = "LICENSE_INCLUDED"
+}
+variable "database_db_version"{
+  default = "19c"
+}
+
+variable "database_db_workload"{
+  default = "OLTP"
+}
