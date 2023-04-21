@@ -137,7 +137,7 @@ variable "integration_instance_integration_instance_type"{
 }
 
 variable "integration_instance_is_byol"{
-  default = "False"
+  default = "false"
 }
 
 variable "integration_instance_message_packs"{
