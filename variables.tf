@@ -144,8 +144,8 @@ variable "integration_instance_is_byol"{
 variable "integration_instance_message_packs"{
   default = "1"
 }
-variable "integration_instance_idcs_at"{
-  type =string
-}
+#variable "integration_instance_idcs_at"{
+#  type =string
+#}
 
 
