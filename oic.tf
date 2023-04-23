@@ -2,7 +2,7 @@ data "local_file" "token_description_file" {
     filename = "tokens.tok"
 }
 locals {
-    token_description = base64decode(data.local_file.token_description_file.content)
+    token_description = filebase64(data.local_file.token_description_file.content)
 }
 
 resource "oci_integration_integration_instance" "test_integration_instance" {
