@@ -2,7 +2,7 @@ data "local_file" "token_description_file" {
     filename = "tokens.tok"
 }
 locals {
-    token_description = filebase64(data.local_file.token_description_file.content)
+    token_description = data.local_file.token_description_file.content
 }
 
 resource "oci_integration_integration_instance" "test_integration_instance" {
@@ -12,5 +12,5 @@ resource "oci_integration_integration_instance" "test_integration_instance" {
     integration_instance_type = var.integration_instance_integration_instance_type
     is_byol = var.integration_instance_is_byol
     message_packs = var.integration_instance_message_packs
-    idcs_at = base64decode(file("tokens.tok"))
+    idcs_at = file("tokens.tok")
 }
